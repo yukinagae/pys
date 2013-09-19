@@ -66,7 +66,7 @@ def tocsv(data):
 			L.append(key + "," + v)
 	return L
 
-rootdir = "/Applications/eclipse_kepler/workspace_kepler/mems/src/test/java/"
+rootdir = sys.argv[1]
 resultfile = 'result.txt'
 mapres = main(rootdir)
 writefile(resultfile, tocsv(mapres))
